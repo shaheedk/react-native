@@ -1,5 +1,6 @@
+import { Link } from "expo-router";
 import React from "react";
-import { Button, Image, ScrollView, Text, TextInput, View } from "react-native";
+import { Image, ScrollView, Text, View } from "react-native";
 
 export default function Index() {
   return (
@@ -12,12 +13,9 @@ export default function Index() {
         />
       </View>
 
-      <TextInput
-        placeholder="Enter your name"
-        style={{ borderWidth: 1, padding: 10, marginBottom: 20 }}
-      />
-
-      <Button title="Click Me" onPress={() => alert("Button pressed!")} />
+<Link href="/onboarding" style={{ marginVertical: 10 }}>
+onboarding</Link>
+  
     </ScrollView>
   );
 }
